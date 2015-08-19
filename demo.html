@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <meta name="Keywords" content="图片轮播，轮播，x方向，y方向，渐隐"/>
+    <meta name="Description" content="支持x方向，y方向和渐隐的Jquery图片轮播插件"/>
+    <title>Jquery图片轮播插件</title>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/slideshow.css" rel="stylesheet">
+</head>
+<body>
+	<p class="demo-tl fs14">DEMO：X</p>
+    <div id="J_slideShowX" class="slideshowx">
+        <div class="box"> 
+            <ul class="list">
+            	<li><a href="#" target="_blank"><img src="images/temp.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp2.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp2.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="demo-tl fs14">DEMO：Y</p>
+    <div id="J_slideShowY" class="slideshowy">
+        <div class="box"> 
+            <ul class="list">
+            	<li><a href="#" target="_blank"><img src="images/temp.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp2.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp2.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="demo-tl fs14">DEMO：fade</p>
+    <div id="J_slideShowFade" class="slideshowfade">
+        <div class="box"> 
+            <ul class="list">
+            	<li><a href="#" target="_blank"><img src="images/temp.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp2.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            	<li><a href="#" target="_blank"><img src="images/temp2.jpg" alt="轮播图片title" width="424" height="264"></a></li>
+            </ul>
+        </div>
+    </div>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.slideshow.js"></script>
+	<script>
+	$('#J_slideShowX').slideShow({ 'events': 'click', 'type': 'x', 'speed': 800, 'time': 2400, 'plus': true, 'minus': true});
+
+	$('#J_slideShowY').slideShow({ 'events': 'click', 'type': 'y', 'speed': 800, 'time': 2400, 'plus': true, 'minus': true});
+
+	$('#J_slideShowFade').slideShow({ 'events': 'click', 'type': 'fade', 'speed': 800, 'time': 2400, 'plus': true, 'minus': true});
+	</script>
+</body>
+</html>
